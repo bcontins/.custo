@@ -1,0 +1,18 @@
+[submodule "vim/config/_vim/bundle/gundo"]
+	path = vim/config/_vim/bundle/gundo
+	url = https://github.com/sjl/gundo.vim.git
+[submodule "vim/config/_vim/bundle/fugitive"]
+	path = vim/config/_vim/bundle/fugitive
+	url = http://github.com/tpope/vim-fugitive.git
+[submodule "vim/config/_vim/bundle/git"]
+	path = vim/config/_vim/bundle/git
+	url = https://github.com/tpope/vim-git.git
+[submodule "vim/config/_vim/bundle/minibufexpl"]
+	path = vim/config/_vim/bundle/minibufexpl
+	url = https://github.com/sontek/minibufexpl.vim.git
+[submodule "vim/config/_vim/bundle/py.test"]
+	path = vim/config/_vim/bundle/py.test
+	url = https://github.com/alfredodeza/pytest.vim.git
+[submodule "vim/config/_vim/bundle/nerdtree"]
+	path = vim/config/_vim/bundle/nerdtree
+	url = https://github.com/vim-scripts/The-NERD-tree.git

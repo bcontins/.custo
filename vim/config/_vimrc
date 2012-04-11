@@ -1,0 +1,58 @@
+" ==========================================================
+" Pathogen - Allows us to organize our vim plugins
+" ==========================================================
+" Load pathogen with docs for all plugins
+filetype off
+call pathogen#runtime_append_all_bundles()
+call pathogen#helptags()
+
+" ==========================================================
+" Basic Settings
+" ==========================================================
+colorscheme 256-jungle
+syntax on                     " syntax highlighing
+filetype on                   " try to detect filetypes
+filetype plugin indent on     " enable loading indent file for filetype
+set number                    " Display line numbers
+set numberwidth=1             " using only 1 column (and 1 space) while
+set background=dark           " We are using dark background in vim
+set title                     " show title in console title bar
+set wildmenu                  " Menu completion in command mode on <Tab>
+set wildmode=full             " <Tab> cycles between all matching choices.
+
+" don't bell or blink
+set noerrorbells
+set vb t_vb=
+
+" Enable code folding
+set foldmethod=indent
+set foldlevel=99
+
+" ==========================================================
+" Change shortcuts
+" ==========================================================
+
+" Change the leader to be a comma vs slash
+let mapleader=","             
+
+" Bind Ctrl+<movement> keys to move around the windows
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+map <c-h> <c-w>h
+
+" Bind a key to toggle the Gundo window
+map <leader>g :GundoToggle<CR>
+
+" Bind a key too toggle the NERD tree navigator
+map <leader>n :NERDTreeToggle<CR>
+
+" Execute the tests
+nmap <silent><Leader>tf <Esc>:Pytest file<CR>
+nmap <silent><Leader>tc <Esc>:Pytest class<CR>
+nmap <silent><Leader>tm <Esc>:Pytest method<CR>
+" cycle through test errors
+nmap <silent><Leader>tn <Esc>:Pytest next<CR>
+nmap <silent><Leader>tp <Esc>:Pytest previous<CR>
+nmap <silent><Leader>te <Esc>:Pytest error<CR>
+
