@@ -16,3 +16,9 @@
 [submodule "vim/config/_vim/bundle/nerdtree"]
 	path = vim/config/_vim/bundle/nerdtree
 	url = https://github.com/vim-scripts/The-NERD-tree.git
+[submodule "bufexplorer"]
+	path = bufexplorer
+	url = https://github.com/jlanzarotta/bufexplorer.git
+[submodule "vim/config/_vim/bundle/bufexplorer"]
+	path = vim/config/_vim/bundle/bufexplorer
+	url = https://github.com/jlanzarotta/bufexplorer.git
