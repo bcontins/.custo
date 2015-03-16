@@ -3,7 +3,7 @@
 " ==========================================================
 " Load pathogen with docs for all plugins
 filetype off
-call pathogen#runtime_append_all_bundles()
+call pathogen#infect()
 call pathogen#helptags()
 
 " ==========================================================
@@ -46,13 +46,4 @@ map <leader>g :GundoToggle<CR>
 
 " Bind a key too toggle the NERD tree navigator
 map <leader>n :NERDTreeToggle<CR>
-
-" Execute the tests
-nmap <silent><Leader>tf <Esc>:Pytest file<CR>
-nmap <silent><Leader>tc <Esc>:Pytest class<CR>
-nmap <silent><Leader>tm <Esc>:Pytest method<CR>
-" cycle through test errors
-nmap <silent><Leader>tn <Esc>:Pytest next<CR>
-nmap <silent><Leader>tp <Esc>:Pytest previous<CR>
-nmap <silent><Leader>te <Esc>:Pytest error<CR>
 

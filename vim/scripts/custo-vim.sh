@@ -4,6 +4,16 @@ source $scriptdir/../../common/scripts/ini-parser.sh
 
 # Link folders
 
+if [ -L $HOME/.vim ]
+then
+    rm $HOME/.vim
+fi
+
+if [ -L $HOME/.vimrc ]
+then
+    rm $HOME/.vimrc
+fi
+
 ln -s $scriptdir/../config/_vim $HOME/.vim
 ln -s $scriptdir/../config/_vimrc $HOME/.vimrc
 
@@ -11,12 +21,12 @@ ln -s $scriptdir/../config/_vimrc $HOME/.vimrc
 
 cd $scriptdir/../../
 
+set -x
 
-git submodule add http://github.com/tpope/vim-fugitive.git vim/config/_vim/bundle/fugitive
+git submodule add https://github.com/jlanzarotta/bufexplorer.git vim/config/_vim/bundle/bufexplorer
+git submodule add https://github.com/tpope/vim-fugitive.git vim/config/_vim/bundle/fugitive
 git submodule add https://github.com/tpope/vim-git.git vim/config/_vim/bundle/git
 git submodule add https://github.com/sjl/gundo.vim.git vim/config/_vim/bundle/gundo
-git submodule add https://github.com/sontek/minibufexpl.vim.git vim/config/_vim/bundle/minibufexpl
-git submodule add https://github.com/alfredodeza/pytest.vim.git vim/config/_vim/bundle/py.test
 git submodule add https://github.com/vim-scripts/The-NERD-tree.git vim/config/_vim/bundle/nerdtree
 
 git submodule init

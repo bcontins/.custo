@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/test/.custo/vim/config/_vim'
+let g:netrw_dirhist_2='/home/test/.custo/vim/config'
+let g:netrw_dirhist_3='/home/test/tas/dvd_generation/kickstarts'
+let g:netrw_dirhist_4='/home/test/.custo/.git'
