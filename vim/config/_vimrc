@@ -9,10 +9,17 @@ call pathogen#helptags()
 " ==========================================================
 " Basic Settings
 " ==========================================================
-colorscheme 256-jungle
+set t_Co=256
+colorscheme wombat256mod
+
 syntax on                     " syntax highlighing
 filetype on                   " try to detect filetypes
 filetype plugin indent on     " enable loading indent file for filetype
+
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
 set number                    " Display line numbers
 set numberwidth=1             " using only 1 column (and 1 space) while
 set background=dark           " We are using dark background in vim
