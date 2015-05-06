@@ -23,7 +23,8 @@ cd $scriptdir/../../
 
 set -x
 
-git submodule add https://github.com/jlanzarotta/bufexplorer.git vim/config/_vim/bundle/bufexplorer
+git submodule add https://github.com/kien/ctrlp.vim.git vim/config/_vim/bundle/ctrlp
+git submodule add https://github.com/fholgado/minibufexpl.vim.git vim/config/_vim/bundle/minibufexpl
 git submodule add https://github.com/tpope/vim-fugitive.git vim/config/_vim/bundle/fugitive
 git submodule add https://github.com/tpope/vim-git.git vim/config/_vim/bundle/git
 git submodule add https://github.com/sjl/gundo.vim.git vim/config/_vim/bundle/gundo

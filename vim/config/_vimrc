@@ -42,6 +42,8 @@ set foldlevel=99
 " Change the leader to be a comma vs slash
 let mapleader=","             
 
+nnoremap <F3> :set nohlsearch!<CR>
+
 " Bind Ctrl+<movement> keys to move around the windows
 map <c-j> <c-w>j
 map <c-k> <c-w>k

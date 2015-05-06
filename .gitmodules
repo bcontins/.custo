@@ -9,7 +9,7 @@
 	url = https://github.com/tpope/vim-git.git
 [submodule "vim/config/_vim/bundle/minibufexpl"]
 	path = vim/config/_vim/bundle/minibufexpl
-	url = https://github.com/sontek/minibufexpl.vim.git
+	url = https://github.com/fholgado/minibufexpl.vim.git
 [submodule "vim/config/_vim/bundle/py.test"]
 	path = vim/config/_vim/bundle/py.test
 	url = https://github.com/alfredodeza/pytest.vim.git
@@ -22,3 +22,6 @@
 [submodule "vim/config/_vim/bundle/bufexplorer"]
 	path = vim/config/_vim/bundle/bufexplorer
 	url = https://github.com/jlanzarotta/bufexplorer.git
+[submodule "vim/config/_vim/bundle/ctrlp"]
+	path = vim/config/_vim/bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
