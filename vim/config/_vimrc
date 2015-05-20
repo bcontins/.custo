@@ -43,6 +43,7 @@ set foldlevel=99
 let mapleader=","             
 
 nnoremap <F3> :set nohlsearch!<CR>
+nnoremap <F8> :set expantab!<CR>
 
 " Bind Ctrl+<movement> keys to move around the windows
 map <c-j> <c-w>j
@@ -56,3 +57,5 @@ map <leader>g :GundoToggle<CR>
 " Bind a key too toggle the NERD tree navigator
 map <leader>n :NERDTreeToggle<CR>
 
+" Bind a key too toggle the CtrlP navigator
+map <leader>p :CtrlPMixed<CR>
